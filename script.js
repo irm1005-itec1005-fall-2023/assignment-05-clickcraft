@@ -29,5 +29,5 @@ function checkOverlap () {
     alert("Game Over!");
   }
 }
-
+// keydown works faster
 app.addEventListener("click", hop);
