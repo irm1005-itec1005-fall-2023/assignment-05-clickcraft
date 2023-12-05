@@ -1,47 +1,82 @@
 /*
-  CSS File
-*/
+ *   Assignment 05
+ *
+ *
+ */
 
-/*
- VARIABLES
-*/
-:root {
-  /* Core colours */
-  /* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
-  --colour-amaranth: #e63946;
-  --colour-peppermint: #f1faee;
-  --colour-aquaisland: #a8dadc;
-  --colour-wedgewood: #457b9d;
-  --colour-cello: #1d3557;
+/* * {
+    outline: solid red;
+} */
 
-  /* Header configuration */
-  --header-heading-colour: var(--colour-peppermint);
-
-  /* Body configuration */
-  --body-default-colour: var(--colour-peppermint);
-  --body-background-colour: var(--colour-cello);
+#app {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  margin: auto;
 }
 
-/*
-  PAGE / BODY
-*/
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
+#rex {
+  width: 50px;
+  height: 50px;
+  background-image: url("./images/trex.png");
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
 }
 
-main {
-  min-height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.jump {
+  animation: jump .5s linear;
 }
 
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+
+  20% {
+    top: 115px;
+  }
+
+  50% {
+    top: 80px;
+  }
+
+  80% {
+    top: 115px;
+  }
+
+  100% {
+    top: 150px;
+  }
+}
+
+#spike {
+  width: 20px;
+  height: 40px;
+  position: relative;
+  top: 110px;
+  left: 580px;
+
+  background-image: url("images/cactus.png");
+  background-size: 20px 40px;
+
+  animation: block 1.5s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 580px;
+  }
+
+  100% {
+    left: -20px;
+  }
+}
+
+
 /*
-  Screen reader text utility class
-*/
+ * SCREEN READER UTILITY
+ */
 .sr-only {
   position: absolute;
   width: 1px;
