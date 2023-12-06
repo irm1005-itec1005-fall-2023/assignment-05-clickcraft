@@ -1,6 +1,9 @@
+
 const app = document.getElementById("app")
 const rex = document.getElementById("rex");
 const spike = document.getElementById("spike");
+
+
 
 function hop() {
   if (rex.classList != "jump") {
@@ -33,6 +36,6 @@ function checkOverlap () {
 app.addEventListener("click", hop);
 
 
-//adrien: high score counter+save
-//laura: spacebar, 
+//adrien: high score counter+save, increasing speed?
+//laura: spacebar, speed
 // 
