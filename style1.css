@@ -9,6 +9,9 @@
 } */
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url("images/tumblr_ngj74x9GsL1toa8s4o1_500.gif");
 }
 
