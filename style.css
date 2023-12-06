@@ -8,11 +8,18 @@
     outline: solid red;
 } */
 
+body {
+  background-image: url("images/tumblr_ngj74x9GsL1toa8s4o1_500.gif");
+}
+
 #app {
   width: 600px;
   height: 200px;
-  border: 1px solid black;
+  
+  border-bottom: 1px solid white;
   margin: auto;
+ 
+
 }
 
 #rex {
