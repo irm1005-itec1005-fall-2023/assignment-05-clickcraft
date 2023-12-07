@@ -30,9 +30,4 @@ function checkOverlap () {
   }
 }
 // keydown works faster
-app.addEventListener("click", hop);
-
-
-//adrien: high score counter+save
-//laura: spacebar, 
-// 
+document.addEventListener("keydown", hop);
