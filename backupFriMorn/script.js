@@ -1,9 +1,6 @@
-
 const app = document.getElementById("app")
 const rex = document.getElementById("rex");
 const spike = document.getElementById("spike");
-
-
 
 function hop() {
   if (rex.classList != "jump") {
@@ -15,8 +12,6 @@ function hop() {
   }
 }
 function startGame() {
-  document.getElementById("startBtn").blur();
-  document.getElementById("myImage").src = "";
   if (spike.classList != "slide") {
     spike.classList.add("slide");
   } 
@@ -48,16 +43,9 @@ function checkOverlap () {
 }
 
 document.addEventListener("keydown", hop);
-startBtn.addEventListener("click", startGame);
+document.addEventListener("click", startGame);
 
-<<<<<<< HEAD
-//adrien: high score counter+save, increasing speed?
-//laura: spacebar, speed
-// 
-=======
 document.querySelector("form.userform").addEventListener("submit", function(event) {
   event.preventDefault();
-  document.getElementById("playerName").innerText = "Go  " + document.getElementById("name").value + "  !!!";
-  document.getElementById("playerName").className = "pNameClass";
+  document.getElementById("playerName").innerText = document.getElementById("name").value;
 });
->>>>>>> 7d80629ef9506df596a891513f242460b224f332

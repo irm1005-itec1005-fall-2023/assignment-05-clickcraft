@@ -10,18 +10,10 @@
 
 body {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: url("images/tumblr_ngj74x9GsL1toa8s4o1_500.gif");
   color:aliceblue;
-}
-
-main {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 #app {
@@ -29,6 +21,7 @@ main {
   height: 200px;
   border-bottom: 1px solid white;
   margin: auto;
+ 
 
 }
 
@@ -97,16 +90,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.pNameClass {
-  color:aquamarine;
-  font-size: 3rem;
-  margin: 2rem;
-}
-
-#startBtn {
-  margin: 2rem;;
 }
 /*
  * SCREEN READER UTILITY
