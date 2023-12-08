@@ -33,10 +33,31 @@
 
     -->
     <main>
+
+      <div class="commentform">
+        <h1>Alien Adventure - Game</h1>
+        <br>
+        <h2>Click anywhere the box to start/stop game.</h2><br>
+  
+        <form class="userform" method="post">
+            <p>Player Name:</p> <input id="name" required="required" type="text">
+            
+            <button type="submit" name="commentsubmit">I'm in!</button>
+            <br>
+        </form>
+      </div>
+  
+      <div id="playerName"></div>
+
       <div id="app">
         <div id="rex"></div>
         <div id="spike"></div>
       </div>
+
+      <div id="gameOver">
+        <img id="myImage" src="">
+      </div>
+
     </main>
 
     <!-- This is where we add our awesome JavaScript code -->

@@ -11,6 +11,15 @@ function hop() {
     }, 500);
   }
 }
+function startGame() {
+  if (spike.classList != "slide") {
+    spike.classList.add("slide");
+  } 
+  else if (spike.classList == "slide"){
+    spike.classList.remove("slide");
+  }
+
+}
 
 let isAlive = setInterval(checkOverlap, 10);
   
@@ -26,8 +35,17 @@ function checkOverlap () {
   // detect collision
   if (cactusLeft < 45 && cactusLeft > 0 && dinoTop >= 140) {
     // collision
-    alert("Game Over!");
+    spike.classList.remove("slide");
+    //document.getElementById("gameOver").innerText = "GAME OVER!!!";
+    document.getElementById("myImage").src = "images/game over.png";
+    //alert("Game Over!");
   }
 }
-// keydown works faster
+
 document.addEventListener("keydown", hop);
+document.addEventListener("click", startGame);
+
+document.querySelector("form.userform").addEventListener("submit", function(event) {
+  event.preventDefault();
+  document.getElementById("playerName").innerText = document.getElementById("name").value;
+});
