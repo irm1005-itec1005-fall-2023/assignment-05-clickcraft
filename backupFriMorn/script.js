@@ -12,8 +12,6 @@ function hop() {
   }
 }
 function startGame() {
-  document.getElementById("startBtn").blur();
-  document.getElementById("myImage").src = "";
   if (spike.classList != "slide") {
     spike.classList.add("slide");
   } 
@@ -45,10 +43,9 @@ function checkOverlap () {
 }
 
 document.addEventListener("keydown", hop);
-startBtn.addEventListener("click", startGame);
+document.addEventListener("click", startGame);
 
 document.querySelector("form.userform").addEventListener("submit", function(event) {
   event.preventDefault();
-  document.getElementById("playerName").innerText = "Go  " + document.getElementById("name").value + "  !!!";
-  document.getElementById("playerName").className = "pNameClass";
+  document.getElementById("playerName").innerText = document.getElementById("name").value;
 });
