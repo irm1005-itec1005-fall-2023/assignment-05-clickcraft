@@ -40,7 +40,7 @@ main {
     padding: 0px;
 
     display: flex;
-    flex-direction: rev;
+    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
@@ -59,6 +59,7 @@ footer {
 	
 	position:relative;
 	font-size: 1em;
+	margin-top: -100%;
 	background: linear-gradient(21deg, #10abff, #1beabd);
 	padding: 3px;
 	display: inline-block;
