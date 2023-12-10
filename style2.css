@@ -23,12 +23,12 @@ h2 {
     margin-top: 5%;
 }
 
-p1 {
+.p1 {
     color: lightskyblue;
     margin-top: 30%;
 }
 
-p2 {
+.p2 {
     color: white;
     font-size: small;
 }
@@ -40,7 +40,7 @@ main {
     padding: 0px;
 
     display: flex;
-    flex-direction: rev;
+    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
