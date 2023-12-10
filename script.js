@@ -54,10 +54,10 @@ startBtn.addEventListener("click", startGame);
 //adrien: high score counter+save, increasing speed?
 //laura: spacebar, speed
 // 
-=======
+//=======
 document.querySelector("form.userform").addEventListener("submit", function(event) {
   event.preventDefault();
   document.getElementById("playerName").innerText = "Go  " + document.getElementById("name").value + "  !!!";
   document.getElementById("playerName").className = "pNameClass";
 });
->>>>>>> 7d80629ef9506df596a891513f242460b224f332
+//>>>>>>> 7d80629ef9506df596a891513f242460b224f332
