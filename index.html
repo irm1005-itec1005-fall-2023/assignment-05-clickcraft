@@ -1,71 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <!-- Set the page title -->
-    <title>Alien Adventure - Game</title>
-
-    <!-- Set the charset we're using to UTF-8 -->
-    <meta charset="UTF-8" />
-
-    <!-- Set the screens default zoom / scale to 1 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Specifies the document mode for Internet Explorer -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <!-- We are using a CSS Reset file to standardize browser default css -->
-    <link rel="stylesheet" href="./reset.css" />
-
-    <!-- This is where all of our awesome CSS code goes -->
-    <link rel="stylesheet" href="./style1.css" />
-
-    <!-- Set the Favicon  --> 
-        <link rel="icon" href="images/df3a35t-5d4cfe0f-92e1-4775-af79-21f9544a2652.gif" type="image/svg+xml" />
-    <script src="script.js" defer type="module"></script>
-  </head>
-  <body>
-   <canvas id="game"></canvas>
-    
-</body>
-</html>
-    
-    <!--
-
-      ADD YOUR GROUP PROJECT CODE
-
-      YOU MAY REMOVE THE BOILERPLATE CODE BELOW
-
-    -->
-    <main>
-
-      <h1>Alien Adventure - Game</h1>
-        <br>
+    <title>Alien Adventure - Main</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+            <link rel="stylesheet" href="./reset.css" />
+            <link rel="stylesheet" href="./style2.css" />
         
-      <div id="playerName">
-        
-        <form class="userform" method="post">
-            <p>Player Name:</p> <input id="name" required="required" type="text">
+            <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
             
-            <button type="submit" name="nameSubmit">I'm in!</button>
-            <br>
-        </form>
+        
+    </head>
 
-      </div>
+      <body>
+        <header>
+            <h2>Alien Adventure</h2>
+            <div class="image-container">
+              <img class="logo" src="images/alien.gif" alt="header">
+            </div>
+          </header>
+    
+          <main>
+            <label for="name"><p1>Choose a name for your Alien !</p1></label>
+            <div>
+            <p1>
+              <span class="input">
+                <input type="text" placeholder="Yoda" required>
+                <span></span>	
+              </span>
+            </p1>
 
-      <button type="button" id="startBtn">Start game!!!</button>
+            
+            <a href="/indexv2.html"> 
+              <input type= "submit" value="Start Game">
+            </a>
+          </div>
+          </main>
+          <script src="./script.js"></script>
+      </body>
 
-      <div id="app">
-        <div id="rex"></div>
-        <div id="spike"></div>
-      </div>
+      <footer>
+        <p2>&copy;2023 - Designed by Team ClickCraft</p2>
+      </footer>
 
-      <div id="gameOver">
-        <img id="myImage" src="">
-      </div>
-
-    </main>
-
-    <!-- This is where we add our awesome JavaScript code -->
-    <script src="./script.js"></script>
-  </body>
 </html>

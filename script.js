@@ -50,7 +50,7 @@ function checkOverlap () {
 document.addEventListener("keydown", hop);
 startBtn.addEventListener("click", startGame);
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
 //adrien: high score counter+save, increasing speed?
 //laura: spacebar, speed
 // 
