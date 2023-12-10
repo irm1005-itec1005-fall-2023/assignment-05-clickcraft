@@ -2,24 +2,34 @@ body {
     background-image: url("images/tumblr_ngj74x9GsL1toa8s4o1_500.gif");
 }
 
+.logo {
+    position:absolute;
+    width:150px;
+    height:200px;
+    top:30%;
+    left:53%;
+    margin: -128px 0 0 -128px;
+    z-index:1000;
+}
+
 html { 
     font-size: 1.2rem;
+    font-family: Copperplate, Papyrus, fantasy;
 }
 
 h2 { 
-    color: rgb(119, 215, 119);
+    color: lightskyblue;
     text-align: center;
 }
 
 p1 {
-    color: rgb(207, 207, 110);
+    color: lightskyblue;
 }
 
 p2 {
     color: white;
     font-size: small;
 }
-
 
 main { 
     
@@ -42,7 +52,6 @@ footer {
     left: 0; 
     z-index: 10;
 }
-
 
 .input {
 	
@@ -94,18 +103,12 @@ footer {
 	
 }
 
-
-html, body {
-	height:100%;
-}
-
 input {
 	font-family: inherit;
 	line-height:inherit;
 	color:#2e3750;
 	min-width:12em;
 }
-
 
 html::after {
 	content:'';
