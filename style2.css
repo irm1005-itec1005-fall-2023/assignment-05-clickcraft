@@ -59,6 +59,7 @@ footer {
 	
 	position:relative;
 	font-size: 1em;
+	margin-top: -100%;
 	background: linear-gradient(21deg, #10abff, #1beabd);
 	padding: 3px;
 	display: inline-block;
